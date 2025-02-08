@@ -1,0 +1,2657 @@
+{
+    "info": {
+        "_postman_id": "2091aed1-2d17-43ab-9742-120c5e1a0fd7",
+        "name": "AIGENCY API Documentation",
+        "description": "Bu API, JSONAPI standartlar\u0131na g\u00f6re Restfull servis \u00fczerinde geli\u015ftirilmi\u015ftir.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "30798184",
+        "_collection_link": "https://solar-meteor-18671.postman.co/workspace/New-Team-Workspace~3c55618d-b306-44a2-a1a2-d693080b6630/collection/30798184-2091aed1-2d17-43ab-9742-120c5e1a0fd7?action=share&source=collection_link&creator=30798184"
+    },
+    "item": [
+        {
+            "name": "Authentication",
+            "item": [
+                {
+                    "name": "/login",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "email",
+                                    "value": "test@gmail.com",
+                                    "description": "Kullan\u0131c\u0131 E-Posta Adresi\n",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "123456",
+                                    "description": "Kullan\u0131c\u0131 \u015eifresi\n",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/login/",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "login",
+                                ""
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "email",
+                                            "value": "mail@example.com",
+                                            "description": "Kullan\u0131c\u0131 E-Posta Adresi\n",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "password123",
+                                            "description": "Kullan\u0131c\u0131 \u015eifresi\n",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/login",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "login"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 13:38:02 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=YteHS0YtrwpUia1rkgynVglbUBaclt%2Bwi7is%2B9MBt53iQpivY957EM5Ze79n%2BSMWkD7nfgWTzN3e9pwyGihm2ETjn77i9y%2BzDNSbC91AqCheT%2BmMGnKUEv2PHZywiA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "867619aa6ebd5ac5-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"status\": true,\n    \"message\": \"Giri\u015f ba\u015far\u0131l\u0131, l\u00fctfen bekleyin!\",\n    \"access_token\": \"ejWekxowsm3.....\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/register",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "Mustafa",
+                                    "description": "Kay\u0131t formu Ad\u0131n\u0131z alan\u0131",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "email",
+                                    "value": "mail@example.com",
+                                    "description": "Kay\u0131t formu E-Posta Adresi alan\u0131",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "password123",
+                                    "description": "Kay\u0131t formu \u015eifre alan\u0131",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "terms_rules",
+                                    "value": "checked",
+                                    "description": "Kay\u0131t formu \u015eartlar ve Ko\u015fullar alan\u0131",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/register/",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "register",
+                                ""
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "name",
+                                            "value": "Mustafa",
+                                            "description": "Kay\u0131t formu Ad\u0131n\u0131z alan\u0131",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "email",
+                                            "value": "mail@example.com",
+                                            "description": "Kay\u0131t formu E-Posta Adresi alan\u0131",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "password123",
+                                            "description": "Kay\u0131t formu \u015eifre alan\u0131",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "terms_rules",
+                                            "value": "checked",
+                                            "description": "Kay\u0131t formu \u015eartlar ve Ko\u015fullar alan\u0131",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/register",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "register"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 13:47:59 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=3MFqk6yqmTVh56CnxgRZzE%2FPewo3l3nJEbXtCAaAXYYgslf64nVDjxZKQoCyr9apA7GYtTDNQU%2BywnItLq2BnRshgRAW6vbSxWoNxu9XjlB8sFgOsHPDUl3%2BNuvkIQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "867628428b285b01-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n    \"access_token\": \"ejWekxowsm3.....\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/mailStatus",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/mailStatus/?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "mailStatus",
+                                ""
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "email",
+                                            "value": "mail@example.com",
+                                            "description": "Kontrol edilecek kullan\u0131c\u0131n\u0131n E-Posta adresi\n",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/mailStatus",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "mailStatus"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 13:58:40 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=e1rcthhyjXpQFJWk%2BLQmvPvWbJTDlmhNyQa3M4Kp7FrZa74By1WD2p74IHk4zEkgb%2BAG2vPBRGaFmwCgggjnfzwVR7YxiTClPZmSOW1CRPZ1Q1fckDmZSgwP3nsnwQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "867637e89f015b18-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/sendVerificationMail",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "ET18VJn8pMJmqYsk",
+                                    "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/sendVerificationMail",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "sendVerificationMail"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/sendVerificationMail",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "sendVerificationMail"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:06:51 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=03mIfnMx3sM0O13GoK3NKEBsQEnZgPhS3e6Cc8AfAcDwH%2F3EchIzZDXhnbTVi%2BNqYJKKmGDHrYLflk7a%2BG1HQciV2Um45umib579gVSznggHBxSr6sRLbbaeUPCjAw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "867643e07c1a5b8e-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/forgotPassword",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "email",
+                                    "value": "oyundaisi12@gmail.com",
+                                    "description": "Kurtarma kodu g\u00f6nderilecek E-Posta adresi",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/forgotPassword",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "forgotPassword"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "email",
+                                            "value": "mail@example.com",
+                                            "description": "Kurtarma kodu g\u00f6nderilecek E-Posta adresi",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/forgotPassword",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "forgotPassword"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:18:11 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ChzYexR1P5yfeyX7aTiMGEnWXMkWx%2B6txcAQswEAqwQGsQmZ9pO8sRnLAkw2k%2BGuIUwPcJr6Kuyv1X9DjDs5nOUebbf8huL89io8B%2B0CQPn%2FDFwlhJWa%2B3tvvimMBA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "8676547d8bb35aa1-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"status\": true,\n    \"message\": \"OK\",\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/sendImage",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f",
+                                    "description": "Access token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_661d95af20e3e0.69675466",
+                                    "description": "Chat ID",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "image",
+                                    "value": "postman-cloud:///1ef1a0b5-e031-4f00-b60e-d33c9c83f40b",
+                                    "description": "Image",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "prompt",
+                                    "value": "Analiz eder misin?",
+                                    "description": "Prompt",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/sendImage/",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "sendImage",
+                                ""
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "/MJCreate",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f",
+                                    "description": "Access token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_661d95af20e3e0.69675466",
+                                    "description": "Chat ID",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "prompt",
+                                    "value": "ev \u00e7iz",
+                                    "description": "Prompt",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/MJCreate/",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "MJCreate",
+                                ""
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "/MJCheck",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f",
+                                    "description": "Access token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_661d95af20e3e0.69675466",
+                                    "description": "Chat ID",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "messageId",
+                                    "value": "21c3dd6a-047d-4538-8567-43dd7c384eef",
+                                    "description": "Message ID",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "prompt",
+                                    "value": "ev \u00e7iz",
+                                    "description": "Prompt",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/MJCheck/",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "MJCheck",
+                                ""
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "/DalleCreate",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f",
+                                    "description": "Access token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_661d95af20e3e0.69675466",
+                                    "description": "Chat ID",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "prompt",
+                                    "value": "ev \u00e7iz",
+                                    "description": "Prompt",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/DalleCreate/",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "DalleCreate",
+                                ""
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Ekibimiz",
+            "item": [
+                {
+                    "name": "/ai-team-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/ai-team-list/?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "ai-team-list",
+                                ""
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/ai-team-list",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "ai-team-list"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:37:15 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=%2BL9mEq%2BhTUX0wl63htUx9%2BOjbzQbIprXEHj8G6YgIPkwiwAwq7wum9qDoItwosq8m05hRszpjOldkDno7Hk5c9hqdfnuQZa2%2BcRX8BcN%2F4NC5fSItqxWYTSQvT%2FqBQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "86767069e9055a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n  {\n    \"ai_id\": \"alparslan\",\n    \"ai_name\": \"Alparslan\",\n    \"ai_desc\": \"eCloud Yapay Zeka M\u00fchendisi\",\n  },\n  {\n    \"ai_id\": \"gobeklitepe\",\n    \"ai_name\": \"G\u00f6beklitepe\",\n    \"ai_desc\": \"Neolitik & Arkeolojik Sit Alan\u0131\",\n  }\n  ...\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "/ai-categories",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/ai-categories/?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "ai-categories",
+                                ""
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/ai-categories",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "ai-categories"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:42:19 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=FZFKAykicne4vtFi5R1JdA%2FkBnKLMxnzElnbsUNC0sge3CQT5m0Jwcb5RNaTESFu81htozEV6SWHl1PjKpKgOo%2BL27psIgyCRp67v9Wf1gquvXrYVOa0DGQ1EpppZA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "867677d599025a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n  {\n    \"cat_id\": 1,\n    \"cat_name\": \"\u0130li\u015fki Terapisti (1)\"\n  },\n  {\n    \"cat_id\": 2,\n    \"cat_name\": \"Akademik Uzman (1)\"\n  },\n  {\n    \"cat_id\": 3,\n    \"cat_name\": \"Sa\u011fl\u0131k Uzman\u0131 (2)\"\n  }\n]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Paketler",
+            "item": [
+                {
+                    "name": "/pricing-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/pricing-list?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "pricing-list"
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/pricing-list",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "pricing-list"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "",
+                                            "value": null,
+                                            "disabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:48:44 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=AO9zmUNImr10GYXG7peUVAkH%2Fr7jDgEZpTdeTWT0Qi6I%2FDxNnxmEGtZQ7zARA4fjlDXRe3c7hAwWDOQg%2BHuz%2FX85U6aMwmbblVI1KhoXJ5G0X%2BVj38BupaFr58hCHg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "8676813b7f755a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n  {\n    \"package_name\": \"DARK PRO\",\n    \"package_price\": \"500\u20ba\",\n    \"package_features\": [\n      \"Dark Web Beta Program\",\n      \"50.000 Ekstra Kredi\"\n    ],\n    \"package_ai_list\": [\n      {\n        \"name\": \"Alg\u0131n\",\n        \"img_uri\": \"https://aigency.dev/public_uploads/647137792d190.png\"\n      },\n      {\n        \"name\": \"Yula\",\n        \"img_uri\": \"https://aigency.dev/public_uploads/64713cc01faf9.png\"\n      }\n    ]\n  }\n]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blog",
+            "item": [
+                {
+                    "name": "/blog-list",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/blog-list/?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "blog-list",
+                                ""
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/blog-list",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "blog-list"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:54:53 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=s3ZAQ9RB3lajTs7qQyQfivbQc7o9dmIBYkV9DljtTtrmz%2FG56guKM4FTakg0EzIPs5FKbWaNa7pzgmsFWMVbhGuQERNa1jXrUPEjspW2vK9XEH2k%2F2G06VejC%2F1UZg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "86768a42caec5a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n  {\n    \"blog_id\": 1,\n    \"blog_name\": \"AIGENCY G\u00fcncellendi!\",\n    \"blog_desc\": \"AIGENCY tamamen kod yap\u0131s\u0131n\u0131 yenileyerek sizlere daha h\u0131zl\u0131 ve daha kullan\u0131c\u0131 odakl\u0131 hizmet vermeye devam ediyor.\",\n    \"blog_date\": \"29 Temmuz 2023\",\n    \"blog_img\": \"https://aigency.dev/public_uploads/64c442cf698bd.png\"\n  }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "/blog-inside",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/blog-inside/?access_token=a08e0786df6f4e8f&blog_id=7",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "blog-inside",
+                                ""
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                },
+                                {
+                                    "key": "blog_id",
+                                    "value": "7"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/blog-inside",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "blog-inside"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:55:08 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=NkdCFElZnkZrQF5tiGVHvqQmFA4dOEn3GSZXCZ%2Bw2YglOvLhH2i8pV8c5Xea961TPSUOKCJ6zRukbKNkQWMoFDbXuVNo3ha3RyJwbEPQZXx4GpEMnas7QnEzwt3mnw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "86768a9d4f315a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n    \"blog_id\": 1,\n    \"blog_name\": \"AIGENCY G\u00fcncellendi!\",\n    \"blog_desc\": \"AIGENCY tamamen kod yap\u0131s\u0131n\u0131 yenileyerek sizlere daha h\u0131zl\u0131 ve daha kullan\u0131c\u0131 odakl\u0131 hizmet vermeye devam ediyor.\",\n    \"blog_date\": \"29 Temmuz 2023\",\n    \"blog_img\": \"https://aigency.dev/public_uploads/64c442cf698bd.png\",\n    \"blog_tags\": [\"eCloud\", \"Yaz\u0131l\u0131m\", \"Siber G\u00fcvenlik\", \"Yapay Zeka\", \"AIGENCY\"]\n    \"blog_content\": \"\",\n\n }"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Account",
+            "item": [
+                {
+                    "name": "/my-chats",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/my-chats?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "my-chats"
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/my-chats",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "my-chats"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:55:23 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=n6TjzxtV2OOMDzHeGQvdc7TlQqVk%2Bo2hSJs0Eo8hdsIL%2BfEDIGSxooPf5mPsMHNfvhKaC0JZ7nsoBCoXTke5KBVjhvKlI8eJAeG7is0hTyMUfavESW0ldE3W6nbc2w%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "86768afddd735a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n  {\n    \"ai_id\": 1,\n    \"ai_name\": \"Alparslan\",\n    \"ai_desc\": \"eCloud Yapay Zeka M\u00fchendisi\",\n    \"date\": \"14 Mart 2024\",\n    \"total_chats\": 4,\n    \"total_messages\": 50\n  }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "/view-chats",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/view-chats?access_token=a08e0786df6f4e8f&ai_id=32",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "view-chats"
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                },
+                                {
+                                    "key": "ai_id",
+                                    "value": "32"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "ai_id",
+                                            "value": "",
+                                            "description": "my-chats \u00fczerinden d\u00f6nen ai_id",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/view-chats",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "view-chats"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 15:09:19 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=V6Kywz1id3vaXeD%2BY08k8TXAbjc%2FXV18kx%2Ff3SOAOZWSIMLNkjkLO%2B9xEiokdjkT9oXk6IwfjksMXXsk2Ws6BTohlTlkWD3Tza9E19wML1oT7M6ClL5JL%2FVAGAMIAw%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "86769f643ba95aa3-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n  {\n    \"chat_id\": \"thread_65f46acaa894a8.87395717\",\n    \"chat_name\": \"Sohbet 4\",\n    \"last_message\": \"Merhaba! Sanal bir varl\u0131k olarak her \u015fey yolunda, te\u015fekk\u00fcr ederim.\",\n    \"download_txt\": \"https://aigency.dev/download-chat/alparslan/thread_65f46acaa894a8.87395717?format=txt\",\n    \"download_pdf\": \"https://aigency.dev/download-chat/alparslan/thread_65f46acaa894a8.87395717?format=pdf\",\n    \"download_docx\": \"https://aigency.dev/download-chat/alparslan/thread_65f46acaa894a8.87395717?format=docx\"\n  }\n]"
+                        }
+                    ]
+                },
+                {
+                    "name": "/my-account",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/my-account?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "my-account"
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/my-account",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "my-account"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:55:42 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=kg7QGo%2Fi03tU8neftuYkDeMqUYGEn0h1jsVb%2FS4yrW0f%2BrqN9CXKxwKGjBa5XOfVuH5AN0zDNmmjH1mp8N%2BfokkaQ6fq%2BVVb1exM8nbIoO%2FLaIgn0wE37k6oF4vMVg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "86768b70d97a5a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n  \"name\": \"Ahmet Uysal\",\n  \"email\": \"email@example.com\",\n  \"invite_link\": \"https://aigency.dev/sign-up?invitecode=1aedb8d9dc4751e229a335e371db8058\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/my-purchases",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/my-purchases?access_token=a08e0786df6f4e8f",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "my-purchases"
+                            ],
+                            "query": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f"
+                                }
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/my-purchases",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "my-purchases"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 14:55:56 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=1rpQ3iDwcPrFv1T9JYBz3coT286kbu5NXMUaKBY9ConYLktijRhbEW3RT6QWaRIA507%2B5cBNpOEXCazCDcSFaCeeiG4vxOuERNf7tzr7nk18mp3LAcTXQ7q5A3gs6g%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "86768bc7dbcc5a86-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "[\n  {\n    \"purchase_id\": 5,\n    \"product_name\": \"Geli\u015ftirici\",\n    \"credits\": \"60.000\",\n    \"price\": \"500\u20ba\",\n    \"payment_method\": \"PayTR\",\n    \"status\": 1,\n    \"status_text\": \"\u00d6deme Onayland\u0131\"\n  }\n]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chat",
+            "item": [
+                {
+                    "name": "/newChat",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "QEWEWQ123",
+                                    "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "ai_id",
+                                    "value": "12",
+                                    "description": "ai-team-list \u00fczerinden verilen ai_id",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/newChat",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "newChat"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "ai_id",
+                                            "value": "",
+                                            "description": "ai-team-list \u00fczerinden verilen ai_id",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/newChat",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "newChat"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 15:19:02 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=wpmJgfyu9kJsFIHUt7CNMBzfyqihoRR1TJLdKSJJrnfKSsJ5jD2qjihTT7tP4FvqXjW0%2FRcVay3zp9W3G9R6t5TyRGxtXKbNjYsMQFxJJB01bzB4Ax9z8%2FIFkqAquQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "8676ada2fe015b75-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n  \"ai_id\": \"kutay\",\n  \"chat_id\": \"thread_XXXXXXXX\",\n  \"ai_name\": \"Kutay\",\n  \"ai_desc\": \"Siber G\u00fcvenlik Uzman\u0131\",\n  \"ai_information\": \"Merhaba, ben Kutay. eCloud Yaz\u0131l\u0131m Teknolojileri taraf\u0131ndan olu\u015fturulmu\u015f bir yapay zeka modeliyim ve size siber g\u00fcvenlik konusunda bilgi sa\u011flama amac\u0131nday\u0131m.\",\n  \"messages\": [\n    {\n      \"from\": \"AI\",\n      \"title\": \"Kutay\",\n      \"message\": \"Merhaba, ben Kutay. eCloud Yaz\u0131l\u0131m Teknolojileri taraf\u0131ndan olu\u015fturulmu\u015f bir yapay zeka modeliyim ve size siber g\u00fcvenlik konusunda bilgi sa\u011flama....\",\n      \"date\": \"20/03/2024, 17:58:35\"\n    }  \n  ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/resumeChat",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "QEWEWQ123",
+                                    "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_65fc41896b9b13.42444828",
+                                    "description": "view-chats, newChat ya da resumeChat taraf\u0131ndan d\u00f6nd\u00fcr\u00fclen chat_id",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/resumeChat/",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "resumeChat",
+                                ""
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "GET",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "chat_id",
+                                            "value": "thread_XXXXXX",
+                                            "description": "view-chats i\u00e7erisinden iletilen chat_id",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/resumeChat",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "resumeChat"
+                                    ]
+                                }
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 15:23:06 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=o1PIXXQbquUUppx%2BzvPJIY7bMSEK%2Fdp6M4ZYezryQCNXd17WPI4Ehp0W%2BBrQ40cxKqCk8ixpaFWrJ%2B7lEzDsnU5fd%2BIM9rpSt99NtutrcRXLv1oTNhtIXQwZ2WA3Jg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "8676b392cae45b75-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n  \"ai_id\": \"kutay\",\n  \"chat_id\": \"thread_XXXXXXXX\",\n  \"ai_name\": \"Kutay\",\n  \"ai_desc\": \"Siber G\u00fcvenlik Uzman\u0131\",\n  \"ai_information\": \"Merhaba, ben Kutay. eCloud Yaz\u0131l\u0131m Teknolojileri taraf\u0131ndan olu\u015fturulmu\u015f bir yapay zeka modeliyim ve size siber g\u00fcvenlik konusunda bilgi sa\u011flama amac\u0131nday\u0131m.\",\n  \"messages\": [\n    {\n      \"from\": \"AI\",\n      \"title\": \"Kutay\",\n      \"message\": \"Merhaba, ben Kutay. eCloud Yaz\u0131l\u0131m Teknolojileri taraf\u0131ndan olu\u015fturulmu\u015f bir yapay zeka modeliyim ve size siber g\u00fcvenlik konusunda bilgi sa\u011flama....\",\n      \"date\": \"20/03/2024, 17:58:35\"\n    }  \n  ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/resetChat",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "QEWEWQ123",
+                                    "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_65fc4dde582710.65200770",
+                                    "description": "view-chats, newChat ya da resumeChat taraf\u0131ndan d\u00f6nd\u00fcr\u00fclen chat_id",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/resetChat",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "resetChat"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "chat_id",
+                                            "value": "thread_XXXXXX",
+                                            "description": "view-chats, newChat ya da resumeChat taraf\u0131ndan d\u00f6nd\u00fcr\u00fclen chat_id",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/resetChat",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "resetChat"
+                                    ]
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 15:23:41 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=S9kw6TkJ1RSJVdCdmatcYOa08oWSak5v5eSwGaeTVkk%2FdgldpCq2X098fkyjSxe52tYP0ONtjiRqgo4alUT2Jy3NcgNQl5toJB0Vr8LyNG4Hs6xhU5CxtTrCN4m4EA%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "8676b4722f645b75-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n  \"ai_id\": \"kutay\",\n  \"chat_id\": \"thread_XXXXXXXX\",\n  \"ai_name\": \"Kutay\",\n  \"ai_desc\": \"Siber G\u00fcvenlik Uzman\u0131\",\n  \"ai_information\": \"Merhaba, ben Kutay. eCloud Yaz\u0131l\u0131m Teknolojileri taraf\u0131ndan olu\u015fturulmu\u015f bir yapay zeka modeliyim ve size siber g\u00fcvenlik konusunda bilgi sa\u011flama amac\u0131nday\u0131m.\",\n  \"messages\": [\n    {\n      \"from\": \"AI\",\n      \"title\": \"Kutay\",\n      \"message\": \"Merhaba, ben Kutay. eCloud Yaz\u0131l\u0131m Teknolojileri taraf\u0131ndan olu\u015fturulmu\u015f bir yapay zeka modeliyim ve size siber g\u00fcvenlik konusunda bilgi sa\u011flama....\",\n      \"date\": \"20/03/2024, 17:58:35\"\n    }  \n  ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/sendMessage",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f",
+                                    "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_66108518b8e5a1.18914117",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "message",
+                                    "value": "naber",
+                                    "description": "Kullan\u0131c\u0131 taraf\u0131ndan g\u00f6nderilen mesaj",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/sendMessage",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "sendMessage"
+                            ]
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\u0130stek & Yan\u0131t \u00d6rne\u011fi",
+                            "originalRequest": {
+                                "method": "POST",
+                                "header": [],
+                                "body": {
+                                    "mode": "formdata",
+                                    "formdata": [
+                                        {
+                                            "key": "access_token",
+                                            "value": "ejWekxowsm3.....",
+                                            "description": "Giri\u015f ya da kay\u0131t sonras\u0131nda sistemin verdi\u011fi access_token",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "chat_id",
+                                            "value": "thread_XXXXXX",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "key": "message",
+                                            "value": "",
+                                            "description": "Kullan\u0131c\u0131 taraf\u0131ndan g\u00f6nderilen mesaj",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "raw": "https://aigency.dev/api/v1/sendMessage",
+                                    "protocol": "https",
+                                    "host": [
+                                        "aigency",
+                                        "dev"
+                                    ],
+                                    "path": [
+                                        "api",
+                                        "v1",
+                                        "sendMessage"
+                                    ]
+                                }
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "_postman_previewlanguage": "html",
+                            "header": [
+                                {
+                                    "key": "Date",
+                                    "value": "Wed, 20 Mar 2024 15:27:16 GMT"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/html"
+                                },
+                                {
+                                    "key": "Transfer-Encoding",
+                                    "value": "chunked"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "private, no-cache, max-age=0"
+                                },
+                                {
+                                    "key": "pragma",
+                                    "value": "no-cache"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Accept-Encoding"
+                                },
+                                {
+                                    "key": "CF-Cache-Status",
+                                    "value": "DYNAMIC"
+                                },
+                                {
+                                    "key": "Report-To",
+                                    "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=liTxbsXnPb3UGDgmKl35oguSv64mJPVCdpNs4hKbVDCVsau2q%2FazN2MOSWM1DQZXIpuqmxXlkVMEOcWdTfsOZnoJWTvFddCf9XM2PWPFZzxNdF989NPGodJMxLCCmQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "NEL",
+                                    "value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+                                },
+                                {
+                                    "key": "Server",
+                                    "value": "cloudflare"
+                                },
+                                {
+                                    "key": "CF-RAY",
+                                    "value": "8676b9acc9935b75-VIE"
+                                },
+                                {
+                                    "key": "Content-Encoding",
+                                    "value": "br"
+                                },
+                                {
+                                    "key": "alt-svc",
+                                    "value": "h3=\":443\"; ma=86400"
+                                }
+                            ],
+                            "cookie": [],
+                            "body": "{\n  \"status\": true,\n  \"answer\": {\n    \"from\": \"AI\",\n    \"title\": \"Kutay\",\n    \"message\": \"Merhaba, ben Kutay. eCloud Yaz\u0131l\u0131m Teknolojileri taraf\u0131ndan olu\u015fturulmu\u015f bir yapay zeka modeliyim ve size siber g\u00fcvenlik konusunda bilgi sa\u011flama....\",\n    \"date\": \"20/03/2024, 17:58:35\"\n  }\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "/sendFile",
+                    "request": {
+                        "method": "POST",
+                        "header": [],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "access_token",
+                                    "value": "a08e0786df6f4e8f",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "chat_id",
+                                    "value": "thread_66108518b8e5a1.18914117",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "prompt",
+                                    "value": "Bu kodu oku",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "file",
+                                    "type": "file",
+                                    "src": "postman-cloud:///1eef3a21-955f-47e0-a6a2-6a4caa3d1d9f"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "https://aigency.dev/api/v1/sendFile",
+                            "protocol": "https",
+                            "host": [
+                                "aigency",
+                                "dev"
+                            ],
+                            "path": [
+                                "api",
+                                "v1",
+                                "sendFile"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
+}
